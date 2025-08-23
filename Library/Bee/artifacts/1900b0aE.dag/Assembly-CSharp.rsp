@@ -357,6 +357,9 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.36f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Player/FlashlightController.cs"
 "Assets/Player/FPSController.cs"
+"Assets/Scripts/BeatManager.cs"
+"Assets/Scripts/Bullet.cs"
+"Assets/Scripts/gun.cs"
 -langversion:9.0
 /deterministic
 /optimize+
