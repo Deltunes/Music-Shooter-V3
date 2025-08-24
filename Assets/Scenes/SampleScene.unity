@@ -409,7 +409,7 @@ Transform:
   m_GameObject: {fileID: 1051257642}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0.20800018, z: 0.24000025}
+  m_LocalPosition: {x: -0.2, y: 0.2, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -568,15 +568,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3fb5de6e0b4fab94e9ca4a6368f9a853, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2fe59a1c4cc8dba42ba9b8e23bd6a720, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.178
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 154
+  Priority: 241
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -681,10 +681,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 453572d93a9765745984aa97a8606640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 128
+  bpm: 178
+  delayInMS: -50
   audioThing: {fileID: 1285346181}
   intervals:
-  - noteLength: 1
+  - noteLength: 0.5
     trigger:
       m_PersistentCalls:
         m_Calls:
@@ -700,7 +701,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - noteLength: 1
+  - noteLength: 2
     trigger:
       m_PersistentCalls:
         m_Calls:
@@ -766,7 +767,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 5
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1004,7 +1005,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 5
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1127,7 +1128,7 @@ Transform:
   m_GameObject: {fileID: 2052961049}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.20800018, z: 0.24000025}
+  m_LocalPosition: {x: 0.2, y: 0.2, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
