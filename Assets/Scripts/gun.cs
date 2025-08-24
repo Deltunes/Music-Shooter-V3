@@ -1,6 +1,8 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 
 public class gun : MonoBehaviour
@@ -10,17 +12,27 @@ public class gun : MonoBehaviour
     public AudioSource gunshotSound;
     public float bulletVelocity = 30;
     public float bulletLifetime = 3f;
+    public int measureSyncDelay;
+    private int totalBeats;
+    public int[] beats;
 
-    // Update is called once per frame
-    /*
-    void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        totalBeats = 0 - measureSyncDelay;
+    }
+    public void BeatReached()
+    {
+        totalBeats++;
+        int currentBeat = totalBeats % 8;
+        print(currentBeat);
+        foreach (int beat in beats)
         {
-            FireWeapon();
+            if ((beat - 1) == currentBeat)
+            {
+                FireWeapon();
+            }
         }
     }
-    */
 
     public void FireWeapon()
     {

@@ -359,6 +359,7 @@
 "Assets/Player/FPSController.cs"
 "Assets/Scripts/BeatManager.cs"
 "Assets/Scripts/Bullet.cs"
+"Assets/Scripts/CubeMove.cs"
 "Assets/Scripts/gun.cs"
 -langversion:9.0
 /deterministic
