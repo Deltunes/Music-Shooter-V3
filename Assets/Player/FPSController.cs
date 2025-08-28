@@ -11,17 +11,25 @@ public class FPSController : MonoBehaviour
     public AudioClip walkingSteps;
     public AudioClip runningSteps;
     public AudioSource footstepSound;
+
     public float walkSpeed = 4f;
     public float runSpeed = 8f;
+
     public int maxJumps = 1;
     private int jumpCount;
     public float jumpPower = 8f;
+
+    public int maxDash = 1;
+    private int dashCount;
+    private float dash = 0f;
+    public float maxDashPower = 300.0f;
+
     public float gravity = 25f;
 
     public float lookSpeed = 2f;
     public float lookXLimit = 90f;
 
-    Vector3 moveDirection = Vector3.zero;
+    Vector3 moveVelocity = Vector3.zero;
     float rotationX = 0;
 
     public bool canMove = true;
@@ -30,12 +38,13 @@ public class FPSController : MonoBehaviour
     CharacterController characterController;
     void Start()
     {
+        print(maxDashPower);
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         jumpCount = maxJumps;
+        dashCount = maxDash;
     }
-
     
     void Update()
     {
@@ -44,7 +53,7 @@ public class FPSController : MonoBehaviour
         forward.Normalize();
         right.Normalize();
 
-        //Left shift to runz
+        //Left shift to run
         if (Input.GetKey(KeyCode.LeftShift) && characterController.isGrounded)
         {
             isRunning = true;
@@ -53,38 +62,53 @@ public class FPSController : MonoBehaviour
         {
             isRunning = false;
         }
-        //bool isRunning = Input.GetKey(KeyCode.LeftShift) && characterController.isGrounded;
-        float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
-        float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
-        float movementDirectionY = moveDirection.y;
-        moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+        
+        float curDirectionX  = canMove ? Input.GetAxis("Vertical") : 0;
+        float curDirectionY = canMove ? Input.GetAxis("Horizontal") : 0;
+        Vector3 moveDirection = (forward * curDirectionX) + (right * curDirectionY);
+
+        float movementDirectionY = moveVelocity.y;
+        moveVelocity = moveDirection * (isRunning ? runSpeed : walkSpeed);
 
         //Air Dash
+        if (Input.GetKey(KeyCode.LeftControl) && !characterController.isGrounded && dashCount > 0)
+        {
+            print(maxDashPower);
+            dash = maxDashPower;
+            dashCount -= 1;
+        }
 
+        if (dash > 1)
+        {
+            print(dash);
+            moveVelocity += (moveDirection * dash);
+            dash /= 1.2f;
+        }
 
         //Jump
-        if (characterController.isGrounded && jumpCount < maxJumps)
+        if (characterController.isGrounded && (jumpCount < maxJumps || dashCount < maxDash))
         {
             jumpCount = maxJumps;
+            dashCount = maxDash;
         }
 
         if (Input.GetKeyDown("space") && canMove && jumpCount > 0)
         {
-            moveDirection.y = jumpPower;
+            moveVelocity.y = jumpPower;
             jumpCount--;
         }
         else
         {
-            moveDirection.y = movementDirectionY;
+            moveVelocity.y = movementDirectionY;
         }
 
         if (!characterController.isGrounded)
         {
-            moveDirection.y -= gravity * Time.deltaTime;
+            moveVelocity.y -= gravity * Time.deltaTime;
         }
 
         //Footstep Sound
-        if (characterController.isGrounded && (moveDirection.x != 0 || moveDirection.z != 0))
+        if (characterController.isGrounded && (moveVelocity.x != 0 || moveVelocity.z != 0))
         {
             footstepSound.pitch = Random.Range(0.7f, 1.1f);
             if (!footstepSound.isPlaying)
@@ -105,7 +129,7 @@ public class FPSController : MonoBehaviour
         }
 
         //Move Character
-        characterController.Move(moveDirection * Time.deltaTime);
+        characterController.Move(moveVelocity * Time.deltaTime);
 
         //Rotation
         if (canMove)

@@ -24,7 +24,6 @@ public class gun : MonoBehaviour
     {
         totalBeats++;
         int currentBeat = totalBeats % 8;
-        print(currentBeat);
         foreach (int beat in beats)
         {
             if ((beat - 1) == currentBeat)
