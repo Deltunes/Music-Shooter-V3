@@ -358,10 +358,10 @@
 "Assets/Player/FlashlightController.cs"
 "Assets/Player/FPSController.cs"
 "Assets/Scripts/BeatManager.cs"
-"Assets/Scripts/boostPad.cs"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/CubeMove.cs"
 "Assets/Scripts/gun.cs"
+"Assets/Scripts/padInteraction.cs"
 -langversion:9.0
 /deterministic
 /optimize+

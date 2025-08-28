@@ -12,19 +12,19 @@ public class FPSController : MonoBehaviour
     public AudioClip runningSteps;
     public AudioSource footstepSound;
 
-    public float walkSpeed = 4f;
-    public float runSpeed = 8f;
+    public float walkSpeed = 20f;
+    public float runSpeed = 20f;
 
-    public int maxJumps = 1;
+    public int maxJumps = 2;
     private int jumpCount;
-    public float jumpPower = 8f;
+    public float jumpPower = 10f;
 
     public int maxDash = 1;
     private int dashCount;
     private float dash = 0f;
-    public float maxDashPower = 300.0f;
+    private float maxDashPower = 100.0f;
 
-    public float gravity = 25f;
+    public float gravity = 20f;
 
     public float lookSpeed = 2f;
     public float lookXLimit = 90f;
@@ -38,7 +38,6 @@ public class FPSController : MonoBehaviour
     CharacterController characterController;
     void Start()
     {
-        print(maxDashPower);
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -70,7 +69,13 @@ public class FPSController : MonoBehaviour
         float movementDirectionY = moveVelocity.y;
         moveVelocity = moveDirection * (isRunning ? runSpeed : walkSpeed);
 
-        //Air Dash
+        // Jump and Air Dash
+        if (characterController.isGrounded && (jumpCount < maxJumps || dashCount < maxDash))
+        {
+            jumpCount = maxJumps;
+            dashCount = maxDash;
+        }
+
         if (Input.GetKey(KeyCode.LeftControl) && !characterController.isGrounded && dashCount > 0)
         {
             print(maxDashPower);
@@ -82,14 +87,7 @@ public class FPSController : MonoBehaviour
         {
             print(dash);
             moveVelocity += (moveDirection * dash);
-            dash /= 1.2f;
-        }
-
-        //Jump
-        if (characterController.isGrounded && (jumpCount < maxJumps || dashCount < maxDash))
-        {
-            jumpCount = maxJumps;
-            dashCount = maxDash;
+            dash /= 1.05f;
         }
 
         if (Input.GetKeyDown("space") && canMove && jumpCount > 0)
@@ -108,6 +106,23 @@ public class FPSController : MonoBehaviour
         }
 
         //Footstep Sound
+        footstep();
+
+        //Move Character
+        characterController.Move(moveVelocity * Time.deltaTime);
+
+        //Rotation
+        if (canMove)
+        {
+            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
+            rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
+            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+        }
+    }
+
+    private void footstep()
+    {
         if (characterController.isGrounded && (moveVelocity.x != 0 || moveVelocity.z != 0))
         {
             footstepSound.pitch = Random.Range(0.7f, 1.1f);
@@ -127,17 +142,29 @@ public class FPSController : MonoBehaviour
         {
             footstepSound.Stop();
         }
+    }
 
-        //Move Character
-        characterController.Move(moveVelocity * Time.deltaTime);
-
-        //Rotation
-        if (canMove)
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        switch (hit.gameObject.tag)
         {
-            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
-            rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
-            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+            case "BoostPad":
+                print("boost pad hit!");
+                break;
         }
     }
+
+    /*
+    private IEnumerator BoostCoroutine()
+    {
+        float startTime = Time.time;
+        float boostTime = 1;
+        while (Time.time < startTime + boostTime)
+        {
+            transform.Translate(transform.up * boostSpeed * Time.deltaTime);
+            boostSpeed /= 1.1f;
+            yield return null;
+        }
+    }
+    */
 }

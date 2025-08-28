@@ -64,8 +64,8 @@
     <Compile Include="Assets\Scripts\CubeMove.cs" />
     <Compile Include="Assets\Scripts\gun.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
-    <Compile Include="Assets\Scripts\boostPad.cs" />
     <Compile Include="Assets\Scripts\BeatManager.cs" />
+    <Compile Include="Assets\Scripts\padInteraction.cs" />
     <Compile Include="Assets\Player\FPSController.cs" />
   </ItemGroup>
   <ItemGroup>
