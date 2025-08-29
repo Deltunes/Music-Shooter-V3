@@ -22,7 +22,7 @@ public class FPSController : MonoBehaviour
     public int maxDash = 1;
     private int dashCount;
     private float dash = 0f;
-    private float maxDashPower = 100.0f;
+    private float maxDashPower = 400.0f;
 
     public float gravity = 20f;
 
