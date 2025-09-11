@@ -33,7 +33,10 @@ public class gun : MonoBehaviour
         {
             if ((beat - 1) == currentBeat)
             {
-                FireWeapon();
+                if (Input.GetKey(KeyCode.Mouse0))
+                {
+                    FireWeapon();
+                }
             }
         }
     }

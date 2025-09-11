@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\elija\\MusicShooterV3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\MusicShooterV3\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\MusicShooterV3\\assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|c:\\users\\elija\\musicshooterv3\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\MusicShooterV3\\assets\\scripts\\beatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\beatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|c:\\users\\elija\\musicshooterv3\\assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\MusicShooterV3\\assets\\scripts\\padinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BeatManager.cs",
               "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\BeatManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BeatManager.cs",
@@ -47,8 +47,7 @@
               "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T21:56:13.455Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -64,13 +63,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "FPSController.cs",
               "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Player\\FPSController.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\FPSController.cs",
               "ToolTip": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Player\\FPSController.cs",
               "RelativeToolTip": "Assets\\Player\\FPSController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAIBZwBgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwC4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T16:09:07.078Z",
               "EditorCaption": ""
@@ -89,20 +88,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "gun.cs",
               "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\gun.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\gun.cs",
               "ToolTip": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\gun.cs",
               "RelativeToolTip": "Assets\\Scripts\\gun.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T21:06:19.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
@@ -110,8 +109,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T21:22:08.841Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-23T21:22:08.841Z"
             }
           ]
         }

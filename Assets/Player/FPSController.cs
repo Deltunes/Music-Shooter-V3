@@ -21,8 +21,9 @@ public class FPSController : MonoBehaviour
 
     public int maxDash = 1;
     private int dashCount;
-    private float dash = 0f;
-    private float maxDashPower = 400.0f;
+    private float dash;
+    private float maxDashPower;
+    private float dashFalloff;
 
     public float gravity = 20f;
 
@@ -41,6 +42,9 @@ public class FPSController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        dash = 0f;
+        maxDashPower = 150.0f;
+        dashFalloff = 1.01f;
         jumpCount = maxJumps;
         dashCount = maxDash;
     }
@@ -87,7 +91,7 @@ public class FPSController : MonoBehaviour
         {
             print(dash);
             moveVelocity += (moveDirection * dash);
-            dash /= 1.05f;
+            dash /= dashFalloff;
         }
 
         if (Input.GetKeyDown("space") && canMove && jumpCount > 0)
@@ -144,6 +148,7 @@ public class FPSController : MonoBehaviour
         }
     }
 
+    /*
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         switch (hit.gameObject.tag)
@@ -154,7 +159,6 @@ public class FPSController : MonoBehaviour
         }
     }
 
-    /*
     private IEnumerator BoostCoroutine()
     {
         float startTime = Time.time;
