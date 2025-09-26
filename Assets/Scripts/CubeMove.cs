@@ -28,6 +28,15 @@ public class CubeMove : MonoBehaviour
         {
             moveMag *= -1;
         }
+        /*
+        int altBeat = totalBeats % 2;
+        Material blue = Resources.Load("blue big", typeof(Material)) as Material;
+        Material red = Resources.Load("red big", typeof(Material)) as Material;
+        if (altBeat == 0)
+        {
+ 
+        }
+        */
     }
     
 }

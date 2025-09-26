@@ -14,19 +14,19 @@ public class gun : MonoBehaviour
     public float bulletVelocity;
     public float bulletLifetime;
 
-    public int measureSyncDelay;
+    private int measureSyncDelay;
     private int totalBeats;
     public int[] beats;
 
     private void Start()
     {
+        measureSyncDelay = 0;
         bulletVelocity = 100;
         bulletLifetime = 2f;
         totalBeats = 0 - measureSyncDelay;
     }
     public void BeatReached()
     {
-        print(bulletVelocity);
         totalBeats++;
         int currentBeat = totalBeats % 8;
         foreach (int beat in beats)

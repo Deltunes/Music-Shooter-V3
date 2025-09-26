@@ -43,8 +43,8 @@ public class FPSController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         dash = 0f;
-        maxDashPower = 150.0f;
-        dashFalloff = 1.01f;
+        maxDashPower = 100.0f;
+        dashFalloff = 1.03f;
         jumpCount = maxJumps;
         dashCount = maxDash;
     }

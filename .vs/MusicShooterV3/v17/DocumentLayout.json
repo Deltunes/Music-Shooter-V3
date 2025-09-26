@@ -1,30 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\elija\\MusicShooterV3\\",
+  "WorkspaceRootPath": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\MusicShooterV3\\assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\assets\\scripts\\cubemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|c:\\users\\elija\\musicshooterv3\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\MusicShooterV3\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\MusicShooterV3\\assets\\scripts\\beatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\assets\\scripts\\beatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\beatmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\MusicShooterV3\\assets\\scripts\\padinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\padinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|c:\\users\\elija\\unity projects\\musicshooterv3\\assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\fpscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\MusicShooterV3\\assets\\scripts\\cubemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubemove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|c:\\users\\elija\\unity projects\\musicshooterv3\\assets\\player\\flashlightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\flashlightcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\assets\\scripts\\padinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1D0BA61-7FE2-B624-3994-2237497D8B6E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\padinteraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +38,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "BeatManager.cs",
-              "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\BeatManager.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\BeatManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BeatManager.cs",
-              "ToolTip": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\BeatManager.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\BeatManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\BeatManager.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T21:56:13.455Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "padInteraction.cs",
-              "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\padInteraction.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\padInteraction.cs",
-              "ToolTip": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\padInteraction.cs",
-              "RelativeToolTip": "Assets\\Scripts\\padInteraction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "FlashlightController.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Player\\FlashlightController.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\FlashlightController.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Player\\FlashlightController.cs",
+              "RelativeToolTip": "Assets\\Player\\FlashlightController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T21:53:49.707Z"
+              "WhenOpened": "2025-09-25T23:16:37.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "padInteraction.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\padInteraction.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\padInteraction.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\padInteraction.cs",
+              "RelativeToolTip": "Assets\\Scripts\\padInteraction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T21:53:49.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FPSController.cs",
-              "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Player\\FPSController.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Player\\FPSController.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\FPSController.cs",
-              "ToolTip": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Player\\FPSController.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Player\\FPSController.cs",
               "RelativeToolTip": "Assets\\Player\\FPSController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwC4AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAgwC4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T16:09:07.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "CubeMove.cs",
-              "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\CubeMove.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\CubeMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CubeMove.cs",
-              "ToolTip": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\CubeMove.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\CubeMove.cs",
               "RelativeToolTip": "Assets\\Scripts\\CubeMove.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T18:14:29.135Z"
+              "WhenOpened": "2025-08-24T18:14:29.135Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "gun.cs",
-              "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\gun.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\gun.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\gun.cs",
-              "ToolTip": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\gun.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\gun.cs",
               "RelativeToolTip": "Assets\\Scripts\\gun.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAYwCMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwB4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T21:06:19.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Bullet.cs",
-              "DocumentMoniker": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\Bullet.cs",
+              "DocumentMoniker": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
-              "ToolTip": "C:\\Users\\elija\\MusicShooterV3\\Assets\\Scripts\\Bullet.cs",
+              "ToolTip": "C:\\Users\\elija\\Unity Projects\\MusicShooterV3\\Assets\\Scripts\\Bullet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T21:22:08.841Z"
+              "WhenOpened": "2025-08-23T21:22:08.841Z",
+              "EditorCaption": ""
             }
           ]
         }
